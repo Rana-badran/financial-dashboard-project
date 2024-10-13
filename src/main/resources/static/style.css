@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+footer {
+    background-color: #004086;
+    color: #ffffff; 
+}
+footer h5 {
+    font-weight: 700; 
+    
+}
+hr.custom-hr {
+  background-color: #003071;
+  height: 1.5px;
+  border: none; 
+  margin: 20px 0; 
+}
