@@ -32,11 +32,15 @@
                     // Create a div for each account and append it to the accounts list
                     const accountDiv = document.createElement('div');
                     accountDiv.innerHTML = `
-                        <div class="bg-white border p-3 mb-3">
-                        <h3 style="color:#004080">${account.accountName}</h3>
-                        <p class="text-secondary">Account Number: ${account.accountId}</p>
-                        <p class="text-secondary">Balance: $ ${account.balance} ${account.currency}</p>
+                    <div class="d-flex flex-row justify-content-between bg-white border p-3 mb-3">
+                        <div>
+                            <h3 style="color:#004080">${account.accountName}</h3>
+                            <p class="text-secondary">Account Number: ${account.accountId}</p>
+                        </div>    
+                        <div>
+                        <h4 style="color:#004080"> $ ${account.balance} ${account.currency}</h4>
                         </div>
+                    </div>
                     `;
                     accountsList.appendChild(accountDiv);
                 });       
