@@ -20,7 +20,7 @@ public class FinancialController {
 
     @GetMapping(value = "/balances", produces = MediaType.APPLICATION_JSON_VALUE)
     public String getBalances() throws IOException {
-        Resource resource = resourceLoader.getResource("classpath:static/balances.json");
+        Resource resource = resourceLoader.getResource("classpath:/balances.json");
         Path path = resource.getFile().toPath();
         return new String(Files.readAllBytes(path));
     }
